@@ -1,11 +1,15 @@
 # LabSW4_SolidPrinciples
 
-1. The following object violates Single Responsibility Principle (SRP). Make the adjustment
+1. The following object violates Single Responsibility Principle (SRP). 
+Make the adjustment
 in a form of java code to correct the violation. (25 points)
-![pet]()
 
-2. The following code violates the Open/Close Principle. Refactor the program to remove
+![pet](pet.png)
+
+2. The following code violates the Open/Close Principle. 
+Refactor the program to remove
 the violation (25 points).
+
 public class Customer {
 private String name;
 private String type; // "Student", "Senior Citizen", or "Regular"
@@ -26,6 +30,7 @@ public double applyDiscount(double amount) {
 return amount - calculateDiscount(amount);
 }
 }
+
 3. The following design has the following problem:
 ● The SmartPhone interface defines methods for making calls, sending SMS,
 browsing the web, and taking pictures.
@@ -33,10 +38,13 @@ browsing the web, and taking pictures.
 basic phone (BasicPhone) only needs calling and SMS capabilities.
 ● Forcing the BasicPhone class to implement unused methods (browseWeb and
 takePicture) violates ISP.
-![smartphone]()
+
+![smartphone](Smartphone.png)
 
 Show your solution in codes how to remove the Interface Segregation problem.
+
 4. Refactor the following codes applying the Dependency Inversion Principle (25 points):
+
 public class PaymentProcessor {
  public void processPayment(Order order) {
  String paymentMethod = order.getPaymentMethod();
