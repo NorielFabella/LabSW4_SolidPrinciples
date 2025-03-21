@@ -1,0 +1,3 @@
+interface SoundMaker {
+    String makeSound();
+}

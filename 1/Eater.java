@@ -1,0 +1,3 @@
+interface Eater {
+    String eat();
+}
